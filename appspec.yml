@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /tmp/codigo
-    destination: /opt/tomcat
+  - source: /tmp/codigo/hola-v2.war
+    destination: /opt/tomcat/webapps/
 hooks:
   ApplicationStop:
     - location: codedeploy-scripts/stop.sh
