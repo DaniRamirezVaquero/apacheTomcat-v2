@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$DEPLOY_ROOT="/opt/codedeply-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive"
+$DEPLOY_ROOT="/opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive"
 
 # Navegamos a la carpeta donde se encuentra el código fuente
 cd $DEPLOY_ROOT
