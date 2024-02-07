@@ -12,4 +12,4 @@ chmod +x gradlew
 ./gradlew war
 
 # Renombro el archivo war
-mv build/libs/HOLAMUNDO-0.0.1.war /tmp/codigo/hola-v2.war
+mv build/libs/holamundo-0.0.1-plain.war /tmp/codigo/hola-v2.war
