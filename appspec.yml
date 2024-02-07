@@ -8,7 +8,14 @@ hooks:
     - location: codedeploy-scripts/stop.sh
       timeout: 300
       runas: root
+  BeforeInstall:
+    - location: codedeploy-scripts/before_install.sh
+      timeout: 300
   ApplicationStart:
     - location: codedeploy-scripts/start.sh
+      timeout: 300
+      runas: root
+  ValidateService:
+    - location: codedeploy-scripts/validation.sh
       timeout: 300
       runas: root
