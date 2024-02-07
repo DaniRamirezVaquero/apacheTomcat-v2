@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /tmp/codigo/hola-v2.war
+  - source: /build/libs/hola-v2.war
     destination: /opt/tomcat/webapps/
 hooks:
   ApplicationStop:
