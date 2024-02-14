@@ -8,10 +8,10 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["Creation of the AWS infrastructure"]
+    types: 
+      - completed
 
 jobs:
   build:
@@ -19,6 +19,7 @@ jobs:
     permissions:
       contents: read
 
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 17

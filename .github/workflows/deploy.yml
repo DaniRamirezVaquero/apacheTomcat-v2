@@ -27,7 +27,7 @@ jobs:
       - name: Configure CodeDeploy
         run: |
           aws deploy create-deployment \
-            --application-name "MyApp" \
-            --deployment-group-name "MyDeploymentGroup" \
+            --application-name "MyAppAuto" \
+            --deployment-group-name "MyDeploymentGroupAuto" \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
 
