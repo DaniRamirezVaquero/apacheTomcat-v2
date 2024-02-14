@@ -1,15 +1,13 @@
 name: Creation of the AWS infrastructure
 
 on:   
-  workflow_run:
-    workflows: ["Java CI with Gradle"]
-    types: 
-      - completed
+  push:
+    branches:
+      - main
 
 jobs:
   create_aws_infra:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -25,6 +23,6 @@ jobs:
         with:
           name: "create-aws-infra"
           template: "infra.yml"
-          
+
 
       
