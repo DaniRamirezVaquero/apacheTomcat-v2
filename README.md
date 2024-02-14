@@ -20,6 +20,6 @@ Este proyecto está configurado para desplegarse automáticamente en AWS utiliza
 - before_install.sh: Se ejecuta antes de la instalación. Compila la aplicación utilizando Gradle y renombra el archivo WAR resultante.
 - start.sh: Se ejecuta para iniciar la aplicación. Inicia el servicio Tomcat.
 - stop.sh: Se ejecuta para detener la aplicación. Detiene el servicio Tomcat.
- -validation.sh: Se ejecuta para validar que la aplicación se ha desplegado correctamente. Comprueba el estado del servicio Tomcat.
+ - validation.sh: Se ejecuta para validar que la aplicación se ha desplegado correctamente. Comprueba el estado del servicio Tomcat.
   
 La configuración de CodeDeploy se encuentra en el archivo appspec.yml.
