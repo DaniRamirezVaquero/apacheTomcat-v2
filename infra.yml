@@ -41,7 +41,7 @@ Resources:
       Ec2TagFilters:
         - Key: "Name"
           Type: "KEY_AND_VALUE"
-          Value: "AutoTomcat"
+          Value: !Ref AWS::StackName
       ServiceRoleArn: "arn:aws:iam::602408337996:role/LabRole"
   EC2Instance:
     Type: AWS::EC2::Instance
