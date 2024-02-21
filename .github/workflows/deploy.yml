@@ -25,7 +25,7 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: "us-east-1"
 
-      - name: Configure CodeDeploy
+      - name: Launch CodeDeploy
         run: |
           aws deploy create-deployment \
             --application-name "MyAppAuto" \
